@@ -1,0 +1,30 @@
+.. _whatsnew_01:
+
+Versions 0.1 (Febrary 9 - March 20, 2021)
+-------------------------------------------------------------
+
+{{ header }}
+
+New features
+~~~~~~~~~~~~
+
+- Added gym-like envs to simulate online learning-based recommendation scenarios.
+    - **real env**: users can load real world datasets for simulation 
+    - **synthetic env**: users can test the implemenation and compare performance between models easily.
+
+- Added built-in models
+    - MAB: UCB1, UCB2, TS 
+    - Contextual MAB: LinUCB, Logstic TS, Hybrid LinUCB, Neural UCB, Neural TS
+    - DNN-based: LR+FTRL,  
+
+- Added Simulator module for easily running, collecting, and analyzing simulation results.
+
+
+Performance enhancements
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Contributors
+~~~~~~~~~~~~
+
+- Xiaolan Jiang

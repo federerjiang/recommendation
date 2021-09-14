@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test organization &#8212; Porise 0.1 documentation</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/getting_started.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/pandas.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    <a class="navbar-brand" href="../index.html">
+    
+      <p class="title">Porise</p>
+    
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../getting_started/index.html">Get started</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../user_guide/index.html">Tutorial</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../reference/index.html">API reference</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="index.html">Development</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../whatsnew/index.html">Release notes</a>
+        </li>
+        
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+    <div class="bd-toc-item active">
+    
+  
+    <ul class="nav bd-sidenav">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+  
+  </nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="test-organization">
+<span id="id1"></span><h1>Test organization<a class="headerlink" href="#test-organization" title="Permalink to this headline">¶</a></h1>
+<p>Ideally, there should be one, and only one, obvious place for a test to reside.
+Until we reach that ideal, these are some rules of thumb for where a test should
+be located.</p>
+<ol class="arabic">
+<li><p>Does your test depend only on code in <code class="docutils literal notranslate"><span class="pre">pd._libs.tslibs</span></code>?
+This test likely belongs in one of:</p>
+<ul>
+<li><p>tests.tslibs</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>No file in <code class="docutils literal notranslate"><span class="pre">tests.tslibs</span></code> should import from any pandas modules
+outside of <code class="docutils literal notranslate"><span class="pre">pd._libs.tslibs</span></code></p>
+</div>
+</li>
+<li><p>tests.scalar</p></li>
+<li><p>tests.tseries.offsets</p></li>
+</ul>
+</li>
+<li><p>Does your test depend only on code in pd._libs?
+This test likely belongs in one of:</p>
+<ul class="simple">
+<li><p>tests.libs</p></li>
+<li><p>tests.groupby.test_libgroupby</p></li>
+</ul>
+</li>
+<li><p>Is your test for an arithmetic or comparison method?
+This test likely belongs in one of:</p>
+<ul>
+<li><p>tests.arithmetic</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These are intended for tests that can be shared to test the behavior
+of DataFrame/Series/Index/ExtensionArray using the <code class="docutils literal notranslate"><span class="pre">box_with_array</span></code>
+fixture.</p>
+</div>
+</li>
+<li><p>tests.frame.test_arithmetic</p></li>
+<li><p>tests.series.test_arithmetic</p></li>
+</ul>
+</li>
+<li><p>Is your test for a reduction method (min, max, sum, prod, …)?
+This test likely belongs in one of:</p>
+<ul>
+<li><p>tests.reductions</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These are intended for tests that can be shared to test the behavior
+of DataFrame/Series/Index/ExtensionArray.</p>
+</div>
+</li>
+<li><p>tests.frame.test_reductions</p></li>
+<li><p>tests.series.test_reductions</p></li>
+<li><p>tests.test_nanops</p></li>
+</ul>
+</li>
+<li><p>Is your test for an indexing method?
+This is the most difficult case for deciding where a test belongs, because
+there are many of these tests, and many of them test more than one method
+(e.g. both <code class="docutils literal notranslate"><span class="pre">Series.__getitem__</span></code> and <code class="docutils literal notranslate"><span class="pre">Series.loc.__getitem__</span></code>)</p>
+<ol class="upperalpha">
+<li><p>Is the test specifically testing an Index method (e.g. <code class="docutils literal notranslate"><span class="pre">Index.get_loc</span></code>,
+<code class="docutils literal notranslate"><span class="pre">Index.get_indexer</span></code>)?
+This test likely belongs in one of:</p>
+<ul class="simple">
+<li><p>tests.indexes.test_indexing</p></li>
+<li><p>tests.indexes.fooindex.test_indexing</p></li>
+</ul>
+<p>Within that files there should be a method-specific test class e.g.
+<code class="docutils literal notranslate"><span class="pre">TestGetLoc</span></code>.</p>
+<p>In most cases, neither <code class="docutils literal notranslate"><span class="pre">Series</span></code> nor <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> objects should be
+needed in these tests.</p>
+</li>
+<li><p>Is the test for a Series or DataFrame indexing method <em>other</em> than
+<code class="docutils literal notranslate"><span class="pre">__getitem__</span></code> or <code class="docutils literal notranslate"><span class="pre">__setitem__</span></code>, e.g. <code class="docutils literal notranslate"><span class="pre">xs</span></code>, <code class="docutils literal notranslate"><span class="pre">where</span></code>, <code class="docutils literal notranslate"><span class="pre">take</span></code>,
+<code class="docutils literal notranslate"><span class="pre">mask</span></code>, <code class="docutils literal notranslate"><span class="pre">lookup</span></code>, or <code class="docutils literal notranslate"><span class="pre">insert</span></code>?
+This test likely belongs in one of:</p>
+<ul class="simple">
+<li><p>tests.frame.indexing.test_methodname</p></li>
+<li><p>tests.series.indexing.test_methodname</p></li>
+</ul>
+</li>
+<li><p>Is the test for any of <code class="docutils literal notranslate"><span class="pre">loc</span></code>, <code class="docutils literal notranslate"><span class="pre">iloc</span></code>, <code class="docutils literal notranslate"><span class="pre">at</span></code>, or <code class="docutils literal notranslate"><span class="pre">iat</span></code>?
+This test likely belongs in one of:</p>
+<ul class="simple">
+<li><p>tests.indexing.test_loc</p></li>
+<li><p>tests.indexing.test_iloc</p></li>
+<li><p>tests.indexing.test_at</p></li>
+<li><p>tests.indexing.test_iat</p></li>
+</ul>
+<p>Within the appropriate file, test classes correspond to either types of
+indexers (e.g. <code class="docutils literal notranslate"><span class="pre">TestLocBooleanMask</span></code>) or major use cases
+(e.g. <code class="docutils literal notranslate"><span class="pre">TestLocSetitemWithExpansion</span></code>).</p>
+<p>See the note in section D) about tests that test multiple indexing methods.</p>
+</li>
+<li><p>Is the test for <code class="docutils literal notranslate"><span class="pre">Series.__getitem__</span></code>, <code class="docutils literal notranslate"><span class="pre">Series.__setitem__</span></code>,
+<code class="docutils literal notranslate"><span class="pre">DataFrame.__getitem__</span></code>, or <code class="docutils literal notranslate"><span class="pre">DataFrame.__setitem__</span></code>?
+This test likely belongs in one of:</p>
+<ul class="simple">
+<li><p>tests.series.test_getitem</p></li>
+<li><p>tests.series.test_setitem</p></li>
+<li><p>tests.frame.test_getitem</p></li>
+<li><p>tests.frame.test_setitem</p></li>
+</ul>
+<p>If many cases such a test may test multiple similar methods, e.g.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">pandas._testing</span> <span class="k">as</span> <span class="nn">tm</span>
+
+<span class="k">def</span> <span class="nf">test_getitem_listlike_of_ints</span><span class="p">():</span>
+    <span class="n">ser</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+
+    <span class="n">result</span> <span class="o">=</span> <span class="n">ser</span><span class="p">[[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]]</span>
+    <span class="n">expected</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+    <span class="n">tm</span><span class="o">.</span><span class="n">assert_series_equal</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">expected</span><span class="p">)</span>
+
+    <span class="n">result</span> <span class="o">=</span> <span class="n">ser</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]]</span>
+    <span class="n">tm</span><span class="o">.</span><span class="n">assert_series_equal</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">expected</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<blockquote>
+<div><p>In cases like this, the test location should be based on the <em>underlying</em>
+method being tested.  Or in the case of a test for a bugfix, the location
+of the actual bug.  So in this example, we know that <code class="docutils literal notranslate"><span class="pre">Series.__getitem__</span></code>
+calls <code class="docutils literal notranslate"><span class="pre">Series.loc.__getitem__</span></code>, so this is <em>really</em> a test for
+<code class="docutils literal notranslate"><span class="pre">loc.__getitem__</span></code>.  So this test belongs in <code class="docutils literal notranslate"><span class="pre">tests.indexing.test_loc</span></code>.</p>
+</div></blockquote>
+</li>
+<li><p>Is your test for a DataFrame or Series method?</p>
+<ol class="upperalpha">
+<li><p>Is the method a plotting method?
+This test likely belongs in one of:</p>
+<ul class="simple">
+<li><p>tests.plotting</p></li>
+</ul>
+</li>
+<li><p>Is the method an IO method?
+This test likely belongs in one of:</p>
+<ul class="simple">
+<li><p>tests.io</p></li>
+</ul>
+</li>
+<li><p>Otherwise
+This test likely belongs in one of:</p>
+<ul>
+<li><p>tests.series.methods.test_mymethod</p></li>
+<li><p>tests.frame.methods.test_mymethod</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If a test can be shared between DataFrame/Series using the
+<code class="docutils literal notranslate"><span class="pre">frame_or_series</span></code> fixture, by convention it goes in the
+<code class="docutils literal notranslate"><span class="pre">tests.frame</span></code> file.</p>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>Is your test for an Index method, not depending on Series/DataFrame?
+This test likely belongs in one of:</p>
+<ul class="simple">
+<li><p>tests.indexes</p></li>
+</ul>
+</li>
+</ol>
+<ol class="arabic simple" start="8">
+<li><p>Is your test for one of the pandas-provided ExtensionArrays (<code class="docutils literal notranslate"><span class="pre">Categorical</span></code>,
+<code class="docutils literal notranslate"><span class="pre">DatetimeArray</span></code>, <code class="docutils literal notranslate"><span class="pre">TimedeltaArray</span></code>, <code class="docutils literal notranslate"><span class="pre">PeriodArray</span></code>, <code class="docutils literal notranslate"><span class="pre">IntervalArray</span></code>,
+<code class="docutils literal notranslate"><span class="pre">PandasArray</span></code>, <code class="docutils literal notranslate"><span class="pre">FloatArray</span></code>, <code class="docutils literal notranslate"><span class="pre">BoolArray</span></code>, <code class="docutils literal notranslate"><span class="pre">StringArray</span></code>)?
+This test likely belongs in one of:</p>
+<ul class="simple">
+<li><p>tests.arrays</p></li>
+</ul>
+</li>
+<li><p>Is your test for <em>all</em> ExtensionArray subclasses (the “EA Interface”)?
+This test likely belongs in one of:</p>
+<ul class="simple">
+<li><p>tests.extension</p></li>
+</ul>
+</li>
+</ol>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright 2021, Xiaolan Jiang, Just as an example website to show..<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

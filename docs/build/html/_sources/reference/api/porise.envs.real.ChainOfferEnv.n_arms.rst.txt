@@ -1,0 +1,6 @@
+porise.envs.real.ChainOfferEnv.n\_arms
+======================================
+
+.. currentmodule:: porise.envs.real
+
+.. autoproperty:: ChainOfferEnv.n_arms

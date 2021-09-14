@@ -1,0 +1,6 @@
+porise.envs.synthetic.BernoulliEnv.seed
+=======================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: BernoulliEnv.seed

@@ -1,0 +1,6 @@
+porise.envs.synthetic.QuadraticEnv.reset
+========================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: QuadraticEnv.reset

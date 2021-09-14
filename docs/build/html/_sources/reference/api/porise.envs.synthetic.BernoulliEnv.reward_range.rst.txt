@@ -1,0 +1,6 @@
+porise.envs.synthetic.BernoulliEnv.reward\_range
+================================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. autoattribute:: BernoulliEnv.reward_range

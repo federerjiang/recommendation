@@ -1,0 +1,6 @@
+porise.simulator.Simulator.reset\_rewards
+=========================================
+
+.. currentmodule:: porise.simulator
+
+.. automethod:: Simulator.reset_rewards

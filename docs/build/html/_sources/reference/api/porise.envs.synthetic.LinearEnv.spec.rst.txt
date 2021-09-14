@@ -1,0 +1,6 @@
+porise.envs.synthetic.LinearEnv.spec
+====================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. autoattribute:: LinearEnv.spec

@@ -1,0 +1,6 @@
+porise.envs.synthetic.LinearEnv.get\_reward\_func
+=================================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: LinearEnv.get_reward_func

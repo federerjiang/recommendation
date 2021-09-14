@@ -1,0 +1,6 @@
+porise.envs.synthetic.CosineEnv.close
+=====================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: CosineEnv.close

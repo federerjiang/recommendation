@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Package overview &#8212; Porise 0.1 documentation</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/getting_started.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/pandas.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    <a class="navbar-brand" href="../index.html">
+    
+      <p class="title">Porise</p>
+    
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="index.html">Get started</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../user_guide/index.html">Tutorial</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../reference/index.html">API reference</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../development/index.html">Development</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../whatsnew/index.html">Release notes</a>
+        </li>
+        
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+    <div class="bd-toc-item active">
+    
+  
+    <ul class="nav bd-sidenav">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+  
+  </nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#data-structures" class="nav-link">Data structures</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#why-more-than-one-data-structure" class="nav-link">Why more than one data structure?</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#mutability-and-copying-of-data" class="nav-link">Mutability and copying of data</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#getting-support" class="nav-link">Getting support</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#community" class="nav-link">Community</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#project-governance" class="nav-link">Project governance</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#development-team" class="nav-link">Development team</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#institutional-partners" class="nav-link">Institutional partners</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#license" class="nav-link">License</a>
+        </li>
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="package-overview">
+<span id="overview"></span><h1>Package overview<a class="headerlink" href="#package-overview" title="Permalink to this headline">¶</a></h1>
+<p>pandas is a <a class="reference external" href="https://www.python.org">Python</a> package providing fast,
+flexible, and expressive data structures designed to make working with
+“relational” or “labeled” data both easy and intuitive. It aims to be the
+fundamental high-level building block for doing practical, <strong>real-world</strong> data
+analysis in Python. Additionally, it has the broader goal of becoming <strong>the
+most powerful and flexible open source data analysis/manipulation tool
+available in any language</strong>. It is already well on its way toward this goal.</p>
+<p>pandas is well suited for many different kinds of data:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Tabular data with heterogeneously-typed columns, as in an SQL table or
+Excel spreadsheet</p></li>
+<li><p>Ordered and unordered (not necessarily fixed-frequency) time series data.</p></li>
+<li><p>Arbitrary matrix data (homogeneously typed or heterogeneous) with row and
+column labels</p></li>
+<li><p>Any other form of observational / statistical data sets. The data
+need not be labeled at all to be placed into a pandas data structure</p></li>
+</ul>
+</div></blockquote>
+<p>The two primary data structures of pandas, <code class="xref py py-class docutils literal notranslate"><span class="pre">Series</span></code> (1-dimensional)
+and <code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code> (2-dimensional), handle the vast majority of typical use
+cases in finance, statistics, social science, and many areas of
+engineering. For R users, <code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code> provides everything that R’s
+<code class="docutils literal notranslate"><span class="pre">data.frame</span></code> provides and much more. pandas is built on top of <a class="reference external" href="https://www.numpy.org">NumPy</a> and is intended to integrate well within a scientific
+computing environment with many other 3rd party libraries.</p>
+<p>Here are just a few of the things that pandas does well:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Easy handling of <strong>missing data</strong> (represented as NaN) in floating point as
+well as non-floating point data</p></li>
+<li><p>Size mutability: columns can be <strong>inserted and deleted</strong> from DataFrame and
+higher dimensional objects</p></li>
+<li><p>Automatic and explicit <strong>data alignment</strong>: objects can be explicitly
+aligned to a set of labels, or the user can simply ignore the labels and
+let <code class="docutils literal notranslate"><span class="pre">Series</span></code>, <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>, etc. automatically align the data for you in
+computations</p></li>
+<li><p>Powerful, flexible <strong>group by</strong> functionality to perform
+split-apply-combine operations on data sets, for both aggregating and
+transforming data</p></li>
+<li><p>Make it <strong>easy to convert</strong> ragged, differently-indexed data in other
+Python and NumPy data structures into DataFrame objects</p></li>
+<li><p>Intelligent label-based <strong>slicing</strong>, <strong>fancy indexing</strong>, and <strong>subsetting</strong>
+of large data sets</p></li>
+<li><p>Intuitive <strong>merging</strong> and <strong>joining</strong> data sets</p></li>
+<li><p>Flexible <strong>reshaping</strong> and pivoting of data sets</p></li>
+<li><p><strong>Hierarchical</strong> labeling of axes (possible to have multiple labels per
+tick)</p></li>
+<li><p>Robust IO tools for loading data from <strong>flat files</strong> (CSV and delimited),
+Excel files, databases, and saving / loading data from the ultrafast <strong>HDF5
+format</strong></p></li>
+<li><p><strong>Time series</strong>-specific functionality: date range generation and frequency
+conversion, moving window statistics, date shifting, and lagging.</p></li>
+</ul>
+</div></blockquote>
+<p>Many of these principles are here to address the shortcomings frequently
+experienced using other languages / scientific research environments. For data
+scientists, working with data is typically divided into multiple stages:
+munging and cleaning data, analyzing / modeling it, then organizing the results
+of the analysis into a form suitable for plotting or tabular display. pandas
+is the ideal tool for all of these tasks.</p>
+<p>Some other notes</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>pandas is <strong>fast</strong>. Many of the low-level algorithmic bits have been
+extensively tweaked in <a class="reference external" href="https://cython.org">Cython</a> code. However, as with
+anything else generalization usually sacrifices performance. So if you focus
+on one feature for your application you may be able to create a faster
+specialized tool.</p></li>
+<li><p>pandas is a dependency of <a class="reference external" href="https://www.statsmodels.org/stable/index.html">statsmodels</a>, making it an important part of the
+statistical computing ecosystem in Python.</p></li>
+<li><p>pandas has been used extensively in production in financial applications.</p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="data-structures">
+<h2>Data structures<a class="headerlink" href="#data-structures" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given table">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 24%" />
+<col style="width: 59%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Dimensions</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Series</p></td>
+<td><p>1D labeled homogeneously-typed array</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>DataFrame</p></td>
+<td><p>General 2D labeled, size-mutable tabular structure with potentially heterogeneously-typed column</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="why-more-than-one-data-structure">
+<h3>Why more than one data structure?<a class="headerlink" href="#why-more-than-one-data-structure" title="Permalink to this headline">¶</a></h3>
+<p>The best way to think about the pandas data structures is as flexible
+containers for lower dimensional data. For example, DataFrame is a container
+for Series, and Series is a container for scalars. We would like to be
+able to insert and remove objects from these containers in a dictionary-like
+fashion.</p>
+<p>Also, we would like sensible default behaviors for the common API functions
+which take into account the typical orientation of time series and
+cross-sectional data sets. When using the N-dimensional array (ndarrays) to store 2- and 3-dimensional
+data, a burden is placed on the user to consider the orientation of the data
+set when writing functions; axes are considered more or less equivalent (except
+when C- or Fortran-contiguousness matters for performance). In pandas, the axes
+are intended to lend more semantic meaning to the data; i.e., for a particular
+data set, there is likely to be a “right” way to orient the data. The goal,
+then, is to reduce the amount of mental effort required to code up data
+transformations in downstream functions.</p>
+<p>For example, with tabular data (DataFrame) it is more semantically helpful to
+think of the <strong>index</strong> (the rows) and the <strong>columns</strong> rather than axis 0 and
+axis 1. Iterating through the columns of the DataFrame thus results in more
+readable code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+    <span class="n">series</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span>
+    <span class="c1"># do something with series</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="mutability-and-copying-of-data">
+<h2>Mutability and copying of data<a class="headerlink" href="#mutability-and-copying-of-data" title="Permalink to this headline">¶</a></h2>
+<p>All pandas data structures are value-mutable (the values they contain can be
+altered) but not always size-mutable. The length of a Series cannot be
+changed, but, for example, columns can be inserted into a DataFrame. However,
+the vast majority of methods produce new objects and leave the input data
+untouched. In general we like to <strong>favor immutability</strong> where sensible.</p>
+</div>
+<div class="section" id="getting-support">
+<h2>Getting support<a class="headerlink" href="#getting-support" title="Permalink to this headline">¶</a></h2>
+<p>The first stop for pandas issues and ideas is the <a class="reference external" href="https://github.com/pandas-dev/pandas/issues">Github Issue Tracker</a>. If you have a general question,
+pandas community experts can answer through <a class="reference external" href="https://stackoverflow.com/questions/tagged/pandas">Stack Overflow</a>.</p>
+</div>
+<div class="section" id="community">
+<h2>Community<a class="headerlink" href="#community" title="Permalink to this headline">¶</a></h2>
+<p>pandas is actively supported today by a community of like-minded individuals around
+the world who contribute their valuable time and energy to help make open source
+pandas possible. Thanks to <a class="reference external" href="https://github.com/pandas-dev/pandas/graphs/contributors">all of our contributors</a>.</p>
+<p>If you’re interested in contributing, please visit the <a class="reference internal" href="../development/contributing.html#contributing"><span class="std std-ref">contributing guide</span></a>.</p>
+<p>pandas is a <a class="reference external" href="https://numfocus.org/sponsored-projects">NumFOCUS</a> sponsored project.
+This will help ensure the success of the development of pandas as a world-class open-source
+project and makes it possible to <a class="reference external" href="https://pandas.pydata.org/donate.html">donate</a> to the project.</p>
+</div>
+<div class="section" id="project-governance">
+<h2>Project governance<a class="headerlink" href="#project-governance" title="Permalink to this headline">¶</a></h2>
+<p>The governance process that pandas project has used informally since its inception in 2008 is formalized in <a class="reference external" href="https://github.com/pandas-dev/pandas-governance">Project Governance documents</a>.
+The documents clarify how decisions are made and how the various elements of our community interact, including the relationship between open source collaborative development and work that may be funded by for-profit or non-profit entities.</p>
+<p>Wes McKinney is the Benevolent Dictator for Life (BDFL).</p>
+</div>
+<div class="section" id="development-team">
+<h2>Development team<a class="headerlink" href="#development-team" title="Permalink to this headline">¶</a></h2>
+<p>The list of the Core Team members and more detailed information can be found on the <a class="reference external" href="https://github.com/pandas-dev/pandas-governance/blob/master/people.md">people’s page</a> of the governance repo.</p>
+</div>
+<div class="section" id="institutional-partners">
+<h2>Institutional partners<a class="headerlink" href="#institutional-partners" title="Permalink to this headline">¶</a></h2>
+<p>The information about current institutional partners can be found on <a class="reference external" href="https://pandas.pydata.org/about.html">pandas website page</a>.</p>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright 2021, Xiaolan Jiang, Just as an example website to show..<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

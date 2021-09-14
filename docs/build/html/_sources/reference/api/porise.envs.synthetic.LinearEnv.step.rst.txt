@@ -1,0 +1,6 @@
+porise.envs.synthetic.LinearEnv.step
+====================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: LinearEnv.step

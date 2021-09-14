@@ -1,0 +1,6 @@
+porise.model.algorithms.cmab.NeuralTS.reset
+===========================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. automethod:: NeuralTS.reset

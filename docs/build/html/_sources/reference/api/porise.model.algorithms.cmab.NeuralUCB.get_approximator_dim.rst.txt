@@ -1,0 +1,6 @@
+porise.model.algorithms.cmab.NeuralUCB.get\_approximator\_dim
+=============================================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. automethod:: NeuralUCB.get_approximator_dim

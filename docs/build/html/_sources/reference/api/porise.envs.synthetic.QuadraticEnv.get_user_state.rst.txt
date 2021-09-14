@@ -1,0 +1,6 @@
+porise.envs.synthetic.QuadraticEnv.get\_user\_state
+===================================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: QuadraticEnv.get_user_state

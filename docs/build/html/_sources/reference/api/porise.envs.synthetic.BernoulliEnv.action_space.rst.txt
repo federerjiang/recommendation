@@ -1,0 +1,6 @@
+porise.envs.synthetic.BernoulliEnv.action\_space
+================================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. autoattribute:: BernoulliEnv.action_space

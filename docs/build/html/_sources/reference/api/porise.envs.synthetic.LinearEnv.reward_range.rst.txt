@@ -1,0 +1,6 @@
+porise.envs.synthetic.LinearEnv.reward\_range
+=============================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. autoattribute:: LinearEnv.reward_range

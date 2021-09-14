@@ -1,0 +1,6 @@
+porise.model.algorithms.cmab.LinUCB.train
+=========================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. automethod:: LinUCB.train

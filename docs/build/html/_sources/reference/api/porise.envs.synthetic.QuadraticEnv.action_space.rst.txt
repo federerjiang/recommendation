@@ -1,0 +1,6 @@
+porise.envs.synthetic.QuadraticEnv.action\_space
+================================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. autoattribute:: QuadraticEnv.action_space

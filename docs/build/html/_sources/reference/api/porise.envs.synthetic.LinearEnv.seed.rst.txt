@@ -1,0 +1,6 @@
+porise.envs.synthetic.LinearEnv.seed
+====================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: LinearEnv.seed

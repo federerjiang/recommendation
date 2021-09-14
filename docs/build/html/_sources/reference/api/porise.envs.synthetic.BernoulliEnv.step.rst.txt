@@ -1,0 +1,6 @@
+porise.envs.synthetic.BernoulliEnv.step
+=======================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: BernoulliEnv.step

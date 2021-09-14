@@ -1,0 +1,6 @@
+porise.simulator.Simulator.run
+==============================
+
+.. currentmodule:: porise.simulator
+
+.. automethod:: Simulator.run

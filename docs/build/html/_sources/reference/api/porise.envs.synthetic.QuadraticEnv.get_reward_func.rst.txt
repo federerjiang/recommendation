@@ -1,0 +1,6 @@
+porise.envs.synthetic.QuadraticEnv.get\_reward\_func
+====================================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: QuadraticEnv.get_reward_func

@@ -1,0 +1,6 @@
+porise.envs.synthetic.QuadraticEnv.close
+========================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: QuadraticEnv.close

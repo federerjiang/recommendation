@@ -1,0 +1,6 @@
+porise.envs.real.ChainOfferEnv.action\_space
+============================================
+
+.. currentmodule:: porise.envs.real
+
+.. autoattribute:: ChainOfferEnv.action_space

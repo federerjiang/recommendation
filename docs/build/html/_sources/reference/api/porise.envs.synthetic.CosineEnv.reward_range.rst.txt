@@ -1,0 +1,6 @@
+porise.envs.synthetic.CosineEnv.reward\_range
+=============================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. autoattribute:: CosineEnv.reward_range

@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get started &#8212; Porise 0.1 documentation</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/getting_started.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/pandas.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Tutorial" href="../user_guide/index.html" />
+    <link rel="prev" title="porise documentation" href="../index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    <a class="navbar-brand" href="../index.html">
+    
+      <p class="title">Porise</p>
+    
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="">Get started</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../user_guide/index.html">Tutorial</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../reference/index.html">API reference</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../development/index.html">Development</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../whatsnew/index.html">Release notes</a>
+        </li>
+        
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+    <div class="bd-toc-item active">
+    
+  
+    <ul class="nav bd-sidenav">
+        
+        
+          
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+  
+  </nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#intro-to-porise" class="nav-link">Intro to porise</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#installation" class="nav-link">Installation</a>
+        </li>
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="get-started">
+<span id="getting-started"></span><h1>Get started<a class="headerlink" href="#get-started" title="Permalink to this headline">¶</a></h1>
+<p>Porise is a python framework for building personalized online learning-based recommendation system.</p>
+<p>Porise <strong>was designed with the following purposes in mind</strong>:</p>
+<ul class="simple">
+<li><p>Give users perfect control over their experiments. To this end, a strong
+emphasis is laid on <a class="reference external" href="https://federerjiang.github.io/reference/index.html">API documentation</a>
+, which we have tried to make as clear and precise as possible by pointing out every
+detail of the algorithms.</p></li>
+<li><p>Provide <a class="reference external" href="https://federerjiang.github.io/reference/envs.html">gym-like envs</a> for emulating the online recommendation environment.
+A recommendation model makes prediction based on user/item/context features observed from the env,
+and env gives a reward signal as feedback to the recommendation model. Envs can be created with both synthetic or real-world datasets.</p></li>
+<li><p>Provide various ready-to-use <a class="reference external" href="https://federerjiang.github.io/reference/model.html">online learning algorithms</a>
+such as MAB (multi arm bandit), contextual MAB, and others.</p></li>
+<li><p>Make it easy to implement new algorithm ideas.</p></li>
+<li><p>Provide <a class="reference external" href="https://federerjiang.github.io/reference/simulator.html">tools</a>
+to evaluate, analyse and compare the algorithms’ performance.</p></li>
+</ul>
+<div class="section" id="intro-to-porise">
+<span id="gentle-intro"></span><h2>Intro to porise<a class="headerlink" href="#intro-to-porise" title="Permalink to this headline">¶</a></h2>
+<p>Porise <strong>was designed with the
+following properties in mind</strong>:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>Feature engineering</strong></dt><dd><ul>
+<li><dl class="simple">
+<dt>feature selection</dt><dd><ul>
+<li><p>GBDT selector</p></li>
+<li><p>Other</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>preprocessing</dt><dd><ul>
+<li><p>Numeric</p></li>
+<li><p>Categorical</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Env</strong><span class="classifier">gym-like envs for benchmark.</span></dt><dd><ul>
+<li><p>RealEnv (real world dataset provided by user)</p></li>
+<li><dl class="simple">
+<dt>Synthetic envs</dt><dd><ul>
+<li><p>Non-contextual Env: BernoulliEnv</p></li>
+<li><p>Contextual Env: LinearEnv, QuadraticEnv, ConsineEnv</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Model</strong><span class="classifier">build-in online recommendation algorithms &amp; easy to implement customized ones</span></dt><dd><ul>
+<li><dl class="simple">
+<dt>Bandit</dt><dd><ul>
+<li><p>MAB: UCB1, UCB2, Thompson Sampling</p></li>
+<li><p>Contextual MAB: LinUCB, LinTS, Logistic UCB, Logistic TS, Hybrid LinUCB, Neural UCB, Neural TS</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Adaptation of DNN-based recommendation algorithms</p></li>
+<li><p>Others</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Model Selection</strong></dt><dd><ul>
+<li><p>Support HPO/NAS</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Simulator</strong></dt><dd><ul>
+<li><p>Easy to run simulations with different combination of Env, Model, Hyparameters</p></li>
+<li><p>Support multi-thread to run multiple combinations simutaneously.</p></li>
+<li><p>Collect results, plot, and summarize.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><strong>Deployable in Product ?</strong></p></li>
+</ul>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone bitbucket/path/to/porise.git
+<span class="nb">cd</span> porise/
+pip install .
+</pre></div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="../index.html" title="previous page">porise documentation</a>
+    <a class='right-next' id="next-link" href="../user_guide/index.html" title="next page">Tutorial</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright 2021, Xiaolan Jiang, Just as an example website to show..<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

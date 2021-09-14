@@ -1,0 +1,6 @@
+porise.model.algorithms.cmab.NeuralTS.predict
+=============================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. automethod:: NeuralTS.predict

@@ -1,0 +1,6 @@
+porise.envs.real.ChainOfferEnvV2.get\_arm\_prior\_probs
+=======================================================
+
+.. currentmodule:: porise.envs.real
+
+.. automethod:: ChainOfferEnvV2.get_arm_prior_probs

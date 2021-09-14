@@ -1,0 +1,6 @@
+porise.model.algorithms.cmab.HybridLinUCB.default\_prediction
+=============================================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. automethod:: HybridLinUCB.default_prediction

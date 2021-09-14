@@ -1,0 +1,6 @@
+porise.model.algorithms.cmab.NeuralUCB.reset
+============================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. automethod:: NeuralUCB.reset

@@ -1,0 +1,28 @@
+porise.model.algorithms.cmab.NeuralTS
+=====================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. autoclass:: NeuralTS
+
+   
+
+
+..
+   HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+   .. autosummary::
+      :toctree:
+      
+      NeuralTS.default_prediction
+      NeuralTS.get_approximator_dim
+      NeuralTS.predict
+      NeuralTS.reset
+      NeuralTS.reset_Ainv
+      NeuralTS.train
+      NeuralTS.update_Ainv
+
+
+
+
+   
+

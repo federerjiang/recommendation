@@ -1,0 +1,40 @@
+porise.envs.synthetic.CosineEnv
+===============================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. autoclass:: CosineEnv
+
+   
+
+
+..
+   HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+   .. autosummary::
+      :toctree:
+      
+      CosineEnv.close
+      CosineEnv.get_reward_func
+      CosineEnv.get_user_state
+      CosineEnv.reset
+      CosineEnv.reset_features
+      CosineEnv.reset_rewards
+      CosineEnv.seed
+      CosineEnv.step
+
+
+
+
+   
+
+
+..
+   HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+   .. autosummary::
+      :toctree:
+      
+      CosineEnv.action_space
+      CosineEnv.reward_range
+      CosineEnv.spec
+
+

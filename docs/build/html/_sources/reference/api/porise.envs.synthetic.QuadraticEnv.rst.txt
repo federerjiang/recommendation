@@ -1,0 +1,40 @@
+porise.envs.synthetic.QuadraticEnv
+==================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. autoclass:: QuadraticEnv
+
+   
+
+
+..
+   HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+   .. autosummary::
+      :toctree:
+      
+      QuadraticEnv.close
+      QuadraticEnv.get_reward_func
+      QuadraticEnv.get_user_state
+      QuadraticEnv.reset
+      QuadraticEnv.reset_features
+      QuadraticEnv.reset_rewards
+      QuadraticEnv.seed
+      QuadraticEnv.step
+
+
+
+
+   
+
+
+..
+   HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+   .. autosummary::
+      :toctree:
+      
+      QuadraticEnv.action_space
+      QuadraticEnv.reward_range
+      QuadraticEnv.spec
+
+

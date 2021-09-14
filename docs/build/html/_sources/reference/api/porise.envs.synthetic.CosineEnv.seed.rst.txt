@@ -1,0 +1,6 @@
+porise.envs.synthetic.CosineEnv.seed
+====================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: CosineEnv.seed

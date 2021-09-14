@@ -1,0 +1,6 @@
+porise.model.algorithms.cmab.NeuralUCB.update\_Ainv
+===================================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. automethod:: NeuralUCB.update_Ainv

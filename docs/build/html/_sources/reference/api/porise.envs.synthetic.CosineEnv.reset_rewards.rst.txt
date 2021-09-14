@@ -1,0 +1,6 @@
+porise.envs.synthetic.CosineEnv.reset\_rewards
+==============================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: CosineEnv.reset_rewards

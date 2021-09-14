@@ -1,0 +1,6 @@
+porise.envs.real.RealEnvBase.user\_feat\_dim
+============================================
+
+.. currentmodule:: porise.envs.real
+
+.. autoproperty:: RealEnvBase.user_feat_dim

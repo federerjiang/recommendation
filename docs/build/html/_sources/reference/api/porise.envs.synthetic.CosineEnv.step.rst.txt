@@ -1,0 +1,6 @@
+porise.envs.synthetic.CosineEnv.step
+====================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: CosineEnv.step

@@ -1,0 +1,6 @@
+porise.envs.real.RealEnvBase.seed
+=================================
+
+.. currentmodule:: porise.envs.real
+
+.. automethod:: RealEnvBase.seed

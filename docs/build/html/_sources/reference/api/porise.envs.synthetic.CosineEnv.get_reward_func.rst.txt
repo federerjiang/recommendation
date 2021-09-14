@@ -1,0 +1,6 @@
+porise.envs.synthetic.CosineEnv.get\_reward\_func
+=================================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: CosineEnv.get_reward_func

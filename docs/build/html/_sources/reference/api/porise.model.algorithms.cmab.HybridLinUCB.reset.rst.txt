@@ -1,0 +1,6 @@
+porise.model.algorithms.cmab.HybridLinUCB.reset
+===============================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. automethod:: HybridLinUCB.reset

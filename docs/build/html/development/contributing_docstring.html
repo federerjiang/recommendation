@@ -1,0 +1,608 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>porise docstring guide &#8212; Porise 0.1 documentation</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/getting_started.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/pandas.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="porise code style guide" href="code_style.html" />
+    <link rel="prev" title="Contributing to porise" href="contributing.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    <a class="navbar-brand" href="../index.html">
+    
+      <p class="title">Porise</p>
+    
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../getting_started/index.html">Get started</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../user_guide/index.html">Tutorial</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../reference/index.html">API reference</a>
+        </li>
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="index.html">Development</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../whatsnew/index.html">Release notes</a>
+        </li>
+        
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+    <div class="bd-toc-item active">
+    
+  
+    <ul class="nav bd-sidenav">
+        
+        
+        
+        
+        
+        
+        
+        
+          
+            
+                <li class="">
+                    <a href="contributing.html">Contributing to porise</a>
+                </li>
+            
+          
+            
+                <li class="active">
+                    <a href="">porise docstring guide</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="code_style.html">porise code style guide</a>
+                </li>
+            
+          
+        
+        
+        
+        
+      </ul>
+  
+  </nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#about-docstrings-and-standards" class="nav-link">About docstrings and standards</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#writing-a-docstring" class="nav-link">Writing a docstring</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#general-rules" class="nav-link">General rules</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#section-1-short-summary" class="nav-link">Section 1: short summary</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#section-2-extended-summary" class="nav-link">Section 2: extended summary</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#section-3-parameters" class="nav-link">Section 3: parameters</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h4">
+            <a href="#parameter-types" class="nav-link">Parameter types</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#section-4-returns-or-yields" class="nav-link">Section 4: returns or yields</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="porise-docstring-guide">
+<span id="docstring"></span><h1>porise docstring guide<a class="headerlink" href="#porise-docstring-guide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="about-docstrings-and-standards">
+<h2>About docstrings and standards<a class="headerlink" href="#about-docstrings-and-standards" title="Permalink to this headline">¶</a></h2>
+<p>A Python docstring is a string used to document a Python module, class,
+function or method, so programmers can understand what it does without having
+to read the details of the implementation.</p>
+<p>Also, it is a common practice to generate online (html) documentation
+automatically from docstrings. <a class="reference external" href="https://www.sphinx-doc.org">Sphinx</a> serves
+this purpose.</p>
+<p>The next example gives an idea of what a docstring looks like:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Add up two integer numbers.</span>
+
+<span class="sd">    This function simply wraps the ``+`` operator, and does not</span>
+<span class="sd">    do anything interesting, except for illustrating what</span>
+<span class="sd">    the docstring of a very simple function looks like.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    num1 : int</span>
+<span class="sd">        First number to add.</span>
+<span class="sd">    num2 : int</span>
+<span class="sd">        Second number to add.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    int</span>
+<span class="sd">        The sum of ``num1`` and ``num2``.</span>
+
+<span class="sd">    See Also</span>
+<span class="sd">    --------</span>
+<span class="sd">    subtract : Subtract one integer from another.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; add(2, 2)</span>
+<span class="sd">    4</span>
+<span class="sd">    &gt;&gt;&gt; add(25, 0)</span>
+<span class="sd">    25</span>
+<span class="sd">    &gt;&gt;&gt; add(10, -10)</span>
+<span class="sd">    0</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span>
+</pre></div>
+</div>
+<p>In the case of porise, the NumPy docstring convention is followed. These conventions are
+explained in this document:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html">numpydoc docstring guide</a>
+(which is based in the original <a class="reference external" href="https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt">Guide to NumPy/SciPy documentation</a>)</p></li>
+</ul>
+<p>numpydoc is a Sphinx extension to support the NumPy docstring convention.</p>
+<p>The standard uses reStructuredText (reST). reStructuredText is a markup
+language that allows encoding styles in plain text files. Documentation
+about reStructuredText can be found in:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.sphinx-doc.org/en/stable/rest.html">Sphinx reStructuredText primer</a></p></li>
+<li><p><a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">Quick reStructuredText reference</a></p></li>
+<li><p><a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html">Full reStructuredText specification</a></p></li>
+</ul>
+<p>The rest of this document will summarize all the above guidelines.</p>
+</div>
+<div class="section" id="writing-a-docstring">
+<span id="docstring-tutorial"></span><h2>Writing a docstring<a class="headerlink" href="#writing-a-docstring" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="general-rules">
+<span id="docstring-general"></span><h3>General rules<a class="headerlink" href="#general-rules" title="Permalink to this headline">¶</a></h3>
+<p>Docstrings must be defined with three double-quotes. No blank lines should be
+left before or after the docstring. The text starts in the next line after the
+opening quotes. The closing quotes have their own line
+(meaning that they are not at the end of the last sentence).</p>
+</div>
+<div class="section" id="section-1-short-summary">
+<span id="docstring-short-summary"></span><h3>Section 1: short summary<a class="headerlink" href="#section-1-short-summary" title="Permalink to this headline">¶</a></h3>
+<p>The short summary is a single sentence that expresses what the function does in
+a concise way.</p>
+<p>The short summary must start with a capital letter, end with a dot, and fit in
+a single line. It needs to express what the object does without providing
+details. For functions and methods, the short summary must start with an
+infinitive verb.</p>
+<p><strong>Good:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">astype</span><span class="p">(</span><span class="n">dtype</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Cast Series type.</span>
+
+<span class="sd">    This section will provide further details.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<p><strong>Bad:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">astype</span><span class="p">(</span><span class="n">dtype</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Casts Series type.</span>
+
+<span class="sd">    Verb in third-person of the present simple, should be infinitive.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">astype</span><span class="p">(</span><span class="n">dtype</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Method to cast Series type.</span>
+
+<span class="sd">    Does not start with verb.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">astype</span><span class="p">(</span><span class="n">dtype</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Cast Series type</span>
+
+<span class="sd">    Missing dot at the end.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">astype</span><span class="p">(</span><span class="n">dtype</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Cast Series type from its current type to the new type defined in</span>
+<span class="sd">    the parameter dtype.</span>
+
+<span class="sd">    Summary is too verbose and doesn&#39;t fit in a single line.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="section-2-extended-summary">
+<span id="docstring-extended-summary"></span><h3>Section 2: extended summary<a class="headerlink" href="#section-2-extended-summary" title="Permalink to this headline">¶</a></h3>
+<p>The extended summary provides details on what the function does. It should not
+go into the details of the parameters, or discuss implementation notes, which
+go in other sections.</p>
+<p>A blank line is left between the short summary and the extended summary.
+Every paragraph in the extended summary ends with a dot.</p>
+<p>The extended summary should provide details on why the function is useful and
+their use cases, if it is not too generic.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">unstack</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Pivot a row index to columns.</span>
+
+<span class="sd">    When using a MultiIndex, a level can be pivoted so each value in</span>
+<span class="sd">    the index becomes a column. This is especially useful when a subindex</span>
+<span class="sd">    is repeated for the main index, and data is easier to visualize as a</span>
+<span class="sd">    pivot table.</span>
+
+<span class="sd">    The index level will be automatically removed from the index when added</span>
+<span class="sd">    as columns.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="section-3-parameters">
+<span id="docstring-parameters"></span><h3>Section 3: parameters<a class="headerlink" href="#section-3-parameters" title="Permalink to this headline">¶</a></h3>
+<p>The details of the parameters will be added in this section. This section has
+the title “Parameters”, followed by a line with a hyphen under each letter of
+the word “Parameters”. A blank line is left before the section title, but not
+after, and not between the line with the word “Parameters” and the one with
+the hyphens.</p>
+<p>After the title, each parameter in the signature must be documented, including
+<code class="docutils literal notranslate"><span class="pre">*args</span></code> and <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>, but not <code class="docutils literal notranslate"><span class="pre">self</span></code>.</p>
+<p>The parameters are defined by their name, followed by a space, a colon, another
+space, and the type (or types). Note that the space between the name and the
+colon is important. Types are not defined for <code class="docutils literal notranslate"><span class="pre">*args</span></code> and <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>, but must
+be defined for all other parameters. After the parameter definition, it is
+required to have a line with the parameter description, which is indented, and
+can have multiple lines. The description must start with a capital letter, and
+finish with a dot.</p>
+<p>For keyword arguments with a default value, the default will be listed after a
+comma at the end of the type. The exact form of the type in this case will be
+“int, default 0”. In some cases it may be useful to explain what the default
+argument means, which can be added after a comma “int, default -1, meaning all
+cpus”.</p>
+<p>In cases where the default value is <code class="docutils literal notranslate"><span class="pre">None</span></code>, meaning that the value will not be
+used. Instead of <code class="docutils literal notranslate"><span class="pre">&quot;str,</span> <span class="pre">default</span> <span class="pre">None&quot;</span></code>, it is preferred to write <code class="docutils literal notranslate"><span class="pre">&quot;str,</span> <span class="pre">optional&quot;</span></code>.
+When <code class="docutils literal notranslate"><span class="pre">None</span></code> is a value being used, we will keep the form “str, default None”.
+For example, in <code class="docutils literal notranslate"><span class="pre">df.to_csv(compression=None)</span></code>, <code class="docutils literal notranslate"><span class="pre">None</span></code> is not a value being used,
+but means that compression is optional, and no compression is being used if not
+provided. In this case we will use <code class="docutils literal notranslate"><span class="pre">&quot;str,</span> <span class="pre">optional&quot;</span></code>. Only in cases like
+<code class="docutils literal notranslate"><span class="pre">func(value=None)</span></code> and <code class="docutils literal notranslate"><span class="pre">None</span></code> is being used in the same way as <code class="docutils literal notranslate"><span class="pre">0</span></code> or <code class="docutils literal notranslate"><span class="pre">foo</span></code>
+would be used, then we will specify “str, int or None, default None”.</p>
+<p><strong>Good:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Series</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">plot</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">kind</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Generate a plot.</span>
+
+<span class="sd">        Render the data in the Series as a matplotlib plot of the</span>
+<span class="sd">        specified kind.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        kind : str</span>
+<span class="sd">            Kind of matplotlib plot.</span>
+<span class="sd">        color : str, default &#39;blue&#39;</span>
+<span class="sd">            Color name or rgb code.</span>
+<span class="sd">        **kwargs</span>
+<span class="sd">            These parameters will be passed to the matplotlib plotting</span>
+<span class="sd">            function.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+</pre></div>
+</div>
+<p><strong>Bad:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Series</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">plot</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">kind</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Generate a plot.</span>
+
+<span class="sd">        Render the data in the Series as a matplotlib plot of the</span>
+<span class="sd">        specified kind.</span>
+
+<span class="sd">        Note the blank line between the parameters title and the first</span>
+<span class="sd">        parameter. Also, note that after the name of the parameter ``kind``</span>
+<span class="sd">        and before the colon, a space is missing.</span>
+
+<span class="sd">        Also, note that the parameter descriptions do not start with a</span>
+<span class="sd">        capital letter, and do not finish with a dot.</span>
+
+<span class="sd">        Finally, the ``**kwargs`` parameter is missing.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+
+<span class="sd">        kind: str</span>
+<span class="sd">            kind of matplotlib plot</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+</pre></div>
+</div>
+<div class="section" id="parameter-types">
+<span id="docstring-parameter-types"></span><h4>Parameter types<a class="headerlink" href="#parameter-types" title="Permalink to this headline">¶</a></h4>
+<p>When specifying the parameter types, Python built-in data types can be used
+directly (the Python type is preferred to the more verbose string, integer,
+boolean, etc):</p>
+<ul class="simple">
+<li><p>int</p></li>
+<li><p>float</p></li>
+<li><p>str</p></li>
+<li><p>bool</p></li>
+</ul>
+<p>For complex types, define the subtypes. For <code class="docutils literal notranslate"><span class="pre">dict</span></code> and <code class="docutils literal notranslate"><span class="pre">tuple</span></code>, as more than
+one type is present, we use the brackets to help read the type (curly brackets
+for <code class="docutils literal notranslate"><span class="pre">dict</span></code> and normal brackets for <code class="docutils literal notranslate"><span class="pre">tuple</span></code>):</p>
+<ul class="simple">
+<li><p>list of int</p></li>
+<li><p>dict of {str : int}</p></li>
+<li><p>tuple of (str, int, int)</p></li>
+<li><p>tuple of (str,)</p></li>
+<li><p>set of str</p></li>
+</ul>
+<p>In case where there are just a set of values allowed, list them in curly
+brackets and separated by commas (followed by a space). If the values are
+ordinal and they have an order, list them in this order. Otherwise, list
+the default value first, if there is one:</p>
+<ul class="simple">
+<li><p>{0, 10, 25}</p></li>
+<li><p>{‘simple’, ‘advanced’}</p></li>
+<li><p>{‘low’, ‘medium’, ‘high’}</p></li>
+<li><p>{‘cat’, ‘dog’, ‘bird’}</p></li>
+</ul>
+<p>If the type is defined in a Python module, the module must be specified:</p>
+<ul class="simple">
+<li><p>datetime.date</p></li>
+<li><p>datetime.datetime</p></li>
+<li><p>decimal.Decimal</p></li>
+</ul>
+<p>If the type is in a package, the module must be also specified:</p>
+<ul class="simple">
+<li><p>numpy.ndarray</p></li>
+<li><p>scipy.sparse.coo_matrix</p></li>
+</ul>
+<p>If the exact type is not relevant, but must be compatible with a NumPy
+array, array-like can be specified. If Any type that can be iterated is
+accepted, iterable can be used:</p>
+<ul class="simple">
+<li><p>array-like</p></li>
+<li><p>iterable</p></li>
+</ul>
+<p>If more than one type is accepted, separate them by commas, except the
+last two types, that need to be separated by the word ‘or’:</p>
+<ul class="simple">
+<li><p>int or float</p></li>
+<li><p>float, decimal.Decimal or None</p></li>
+<li><p>str or list of str</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">None</span></code> is one of the accepted values, it always needs to be the last in
+the list.</p>
+<p>For axis, the convention is to use something like:</p>
+<ul class="simple">
+<li><p>axis : {0 or ‘index’, 1 or ‘columns’, None}, default None</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="section-4-returns-or-yields">
+<span id="docstring-returns"></span><h3>Section 4: returns or yields<a class="headerlink" href="#section-4-returns-or-yields" title="Permalink to this headline">¶</a></h3>
+<p>If the method returns a value, it will be documented in this section. Also
+if the method yields its output.</p>
+<p>The title of the section will be defined in the same way as the “Parameters”.
+With the names “Returns” or “Yields” followed by a line with as many hyphens
+as the letters in the preceding word.</p>
+<p>The documentation of the return is also similar to the parameters. But in this
+case, no name will be provided, unless the method returns or yields more than
+one value (a tuple of values).</p>
+<p>The types for “Returns” and “Yields” are the same as the ones for the
+“Parameters”. Also, the description must finish with a dot.</p>
+<p>For example, with a single value:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sample</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Generate and return a random number.</span>
+
+<span class="sd">    The value is sampled from a continuous uniform distribution between</span>
+<span class="sd">    0 and 1.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    float</span>
+<span class="sd">        Random number generated.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>With more than one value:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">string</span>
+
+<span class="k">def</span> <span class="nf">random_letters</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Generate and return a sequence of random letters.</span>
+
+<span class="sd">    The length of the returned string is also random, and is also</span>
+<span class="sd">    returned.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    length : int</span>
+<span class="sd">        Length of the returned string.</span>
+<span class="sd">    letters : str</span>
+<span class="sd">        String of random letters.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">length</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="n">letters</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">)</span>
+                      <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">length</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">length</span><span class="p">,</span> <span class="n">letters</span>
+</pre></div>
+</div>
+<p>If the method yields its value:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sample_values</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Generate an infinite sequence of random numbers.</span>
+
+<span class="sd">    The values are sampled from a continuous uniform distribution between</span>
+<span class="sd">    0 and 1.</span>
+
+<span class="sd">    Yields</span>
+<span class="sd">    ------</span>
+<span class="sd">    float</span>
+<span class="sd">        Random number generated.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">yield</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="contributing.html" title="previous page">Contributing to porise</a>
+    <a class='right-next' id="next-link" href="code_style.html" title="next page">porise code style guide</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright 2021, Xiaolan Jiang, Just as an example website to show..<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

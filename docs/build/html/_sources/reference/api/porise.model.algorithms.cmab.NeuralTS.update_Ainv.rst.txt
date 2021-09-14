@@ -1,0 +1,6 @@
+porise.model.algorithms.cmab.NeuralTS.update\_Ainv
+==================================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. automethod:: NeuralTS.update_Ainv

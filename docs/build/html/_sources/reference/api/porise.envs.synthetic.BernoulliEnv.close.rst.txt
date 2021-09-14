@@ -1,0 +1,6 @@
+porise.envs.synthetic.BernoulliEnv.close
+========================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: BernoulliEnv.close

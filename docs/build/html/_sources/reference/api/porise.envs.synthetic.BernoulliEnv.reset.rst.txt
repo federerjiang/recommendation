@@ -1,0 +1,6 @@
+porise.envs.synthetic.BernoulliEnv.reset
+========================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: BernoulliEnv.reset

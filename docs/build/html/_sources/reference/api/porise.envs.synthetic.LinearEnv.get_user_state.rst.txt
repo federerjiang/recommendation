@@ -1,0 +1,6 @@
+porise.envs.synthetic.LinearEnv.get\_user\_state
+================================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: LinearEnv.get_user_state

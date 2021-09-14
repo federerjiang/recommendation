@@ -1,0 +1,6 @@
+porise.envs.real.ChainOfferEnv.user\_feat\_dim
+==============================================
+
+.. currentmodule:: porise.envs.real
+
+.. autoproperty:: ChainOfferEnv.user_feat_dim

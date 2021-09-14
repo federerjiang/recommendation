@@ -1,0 +1,36 @@
+porise.envs.synthetic.BernoulliEnv
+==================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. autoclass:: BernoulliEnv
+
+   
+
+
+..
+   HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+   .. autosummary::
+      :toctree:
+      
+      BernoulliEnv.close
+      BernoulliEnv.reset
+      BernoulliEnv.seed
+      BernoulliEnv.step
+
+
+
+
+   
+
+
+..
+   HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+   .. autosummary::
+      :toctree:
+      
+      BernoulliEnv.action_space
+      BernoulliEnv.reward_range
+      BernoulliEnv.spec
+
+

@@ -1,0 +1,6 @@
+porise.envs.synthetic.LinearEnv.close
+=====================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: LinearEnv.close

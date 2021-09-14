@@ -1,0 +1,6 @@
+porise.envs.synthetic.QuadraticEnv.seed
+=======================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: QuadraticEnv.seed

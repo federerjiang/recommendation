@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contributing to porise &#8212; Porise 0.1 documentation</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/getting_started.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/pandas.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="porise docstring guide" href="contributing_docstring.html" />
+    <link rel="prev" title="Development" href="index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main">
+<div class="container-xl">
+
+    <a class="navbar-brand" href="../index.html">
+    
+      <p class="title">Porise</p>
+    
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-menu" class="col-lg-9 collapse navbar-collapse">
+      <ul id="navbar-main-elements" class="navbar-nav mr-auto">
+        
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../getting_started/index.html">Get started</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../user_guide/index.html">Tutorial</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../reference/index.html">API reference</a>
+        </li>
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="index.html">Development</a>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../whatsnew/index.html">Release notes</a>
+        </li>
+        
+        
+      </ul>
+
+
+      
+
+      <ul class="navbar-nav">
+        
+        
+      </ul>
+    </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+          <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+
+    <div class="bd-toc-item active">
+    
+  
+    <ul class="nav bd-sidenav">
+        
+        
+        
+        
+        
+        
+        
+        
+          
+            
+                <li class="active">
+                    <a href="">Contributing to porise</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="contributing_docstring.html">porise docstring guide</a>
+                </li>
+            
+          
+            
+                <li class="">
+                    <a href="code_style.html">porise code style guide</a>
+                </li>
+            
+          
+        
+        
+        
+        
+      </ul>
+  
+  </nav>
+          </div>
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+              
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#where-to-start" class="nav-link">Where to start?</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#contributing-to-the-code-base" class="nav-link">Contributing to the code base</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#creating-a-branch" class="nav-link">Creating a branch</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#committing-your-code" class="nav-link">Committing your code</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#pushing-your-changes" class="nav-link">Pushing your changes</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#review-your-code" class="nav-link">Review your code</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#finally-make-the-pull-request" class="nav-link">Finally, make the pull request</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#updating-your-pull-request" class="nav-link">Updating your pull request</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#tips-for-a-successful-pull-request" class="nav-link">Tips for a successful pull request</a>
+        </li>
+    
+    </ul>
+</nav>
+
+
+              
+          </div>
+          
+
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="contributing-to-porise">
+<span id="contributing"></span><h1>Contributing to porise<a class="headerlink" href="#contributing-to-porise" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="table-of-contents">
+<p class="topic-title">Table of contents:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#where-to-start" id="id1">Where to start?</a></p></li>
+<li><p><a class="reference internal" href="#contributing-to-the-code-base" id="id2">Contributing to the code base</a></p>
+<ul>
+<li><p><a class="reference internal" href="#creating-a-branch" id="id3">Creating a branch</a></p></li>
+<li><p><a class="reference internal" href="#committing-your-code" id="id4">Committing your code</a></p></li>
+<li><p><a class="reference internal" href="#pushing-your-changes" id="id5">Pushing your changes</a></p></li>
+<li><p><a class="reference internal" href="#review-your-code" id="id6">Review your code</a></p></li>
+<li><p><a class="reference internal" href="#finally-make-the-pull-request" id="id7">Finally, make the pull request</a></p></li>
+<li><p><a class="reference internal" href="#updating-your-pull-request" id="id8">Updating your pull request</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#tips-for-a-successful-pull-request" id="id9">Tips for a successful pull request</a></p></li>
+</ul>
+</div>
+<div class="section" id="where-to-start">
+<h2><a class="toc-backref" href="#id1">Where to start?</a><a class="headerlink" href="#where-to-start" title="Permalink to this headline">¶</a></h2>
+<p>All contributions, bug reports, bug fixes, documentation improvements,
+enhancements, and ideas are welcome.</p>
+</div>
+<div class="section" id="contributing-to-the-code-base">
+<h2><a class="toc-backref" href="#id2">Contributing to the code base</a><a class="headerlink" href="#contributing-to-the-code-base" title="Permalink to this headline">¶</a></h2>
+<p>Now that you have an issue you want to fix, enhancement to add, or documentation to improve,
+you need to learn how to work with Git and porise code base.</p>
+<div class="section" id="creating-a-branch">
+<h3><a class="toc-backref" href="#id3">Creating a branch</a><a class="headerlink" href="#creating-a-branch" title="Permalink to this headline">¶</a></h3>
+<p>You want your master branch to reflect only production-ready code, so create a
+feature branch for making your changes. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">branch</span> <span class="n">shiny</span><span class="o">-</span><span class="n">new</span><span class="o">-</span><span class="n">feature</span>
+<span class="n">git</span> <span class="n">checkout</span> <span class="n">shiny</span><span class="o">-</span><span class="n">new</span><span class="o">-</span><span class="n">feature</span>
+</pre></div>
+</div>
+<p>The above can be simplified to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="o">-</span><span class="n">b</span> <span class="n">shiny</span><span class="o">-</span><span class="n">new</span><span class="o">-</span><span class="n">feature</span>
+</pre></div>
+</div>
+<p>This changes your working directory to the shiny-new-feature branch.  Keep any
+changes in this branch specific to one bug or feature so it is clear
+what the branch brings to porise. You can have many shiny-new-features
+and switch in between them using the git checkout command.</p>
+<p>When creating this branch, make sure your master branch is up to date with
+the latest upstream master version. To update your local master branch, you
+can do:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">master</span>
+<span class="n">git</span> <span class="n">pull</span> <span class="n">upstream</span> <span class="n">master</span> <span class="o">--</span><span class="n">ff</span><span class="o">-</span><span class="n">only</span>
+</pre></div>
+</div>
+<p>When you want to update the feature branch with changes in master after
+you created the branch, check the section on
+<a class="reference internal" href="#contributing-update-pr"><span class="std std-ref">updating a PR</span></a>.</p>
+</div>
+<div class="section" id="committing-your-code">
+<h3><a class="toc-backref" href="#id4">Committing your code</a><a class="headerlink" href="#committing-your-code" title="Permalink to this headline">¶</a></h3>
+<p>Keep style fixes to a separate commit to make your pull request more readable.</p>
+<p>Once you’ve made changes, you can see them by typing:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">status</span>
+</pre></div>
+</div>
+<p>If you have created a new file, it is not being tracked by git. Add it by typing:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">add</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">file</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">be</span><span class="o">-</span><span class="n">added</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>Doing ‘git status’ again should give something like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># On branch shiny-new-feature</span>
+<span class="c1">#</span>
+<span class="c1">#       modified:   /relative/path/to/file-you-added.py</span>
+<span class="c1">#</span>
+</pre></div>
+</div>
+<p>Finally, commit your changes to your local repository with an explanatory message. porise
+uses a convention for commit message prefixes and layout.  Here are
+some common prefixes along with general guidelines for when to use them:</p>
+<ul class="simple">
+<li><p>ENH: Enhancement, new functionality</p></li>
+<li><p>BUG: Bug fix</p></li>
+<li><p>DOC: Additions/updates to documentation</p></li>
+<li><p>TST: Additions/updates to tests</p></li>
+<li><p>BLD: Updates to the build process/scripts</p></li>
+<li><p>PERF: Performance improvement</p></li>
+<li><p>TYP: Type annotations</p></li>
+<li><p>CLN: Code cleanup</p></li>
+</ul>
+<p>The following defines how a commit message should be structured.  Please reference the
+relevant Bitbucket issues in your commit message using GH1234 or #1234.  Either style
+is fine, but the former is generally preferred:</p>
+<ul class="simple">
+<li><p>a subject line with <code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">80</span></code> chars.</p></li>
+<li><p>One blank line.</p></li>
+<li><p>Optionally, a commit message body.</p></li>
+</ul>
+<p>Now you can commit your changes in your local repository:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="pushing-your-changes">
+<span id="contributing-push-code"></span><h3><a class="toc-backref" href="#id5">Pushing your changes</a><a class="headerlink" href="#pushing-your-changes" title="Permalink to this headline">¶</a></h3>
+<p>When you want your changes to appear publicly on your Bitbucket page, push your
+forked feature branch’s commits:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">shiny</span><span class="o">-</span><span class="n">new</span><span class="o">-</span><span class="n">feature</span>
+</pre></div>
+</div>
+<p>Here <code class="docutils literal notranslate"><span class="pre">origin</span></code> is the default name given to your remote repository on Bitbucket.
+You can see the remote repositories:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">remote</span> <span class="o">-</span><span class="n">v</span>
+</pre></div>
+</div>
+<p>If you added the upstream repository as described above you will see something
+like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">origin</span>  <span class="n">git</span><span class="nd">@Bitbucket</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">yourname</span><span class="o">/</span><span class="n">porise</span><span class="o">.</span><span class="n">git</span> <span class="p">(</span><span class="n">fetch</span><span class="p">)</span>
+<span class="n">origin</span>  <span class="n">git</span><span class="nd">@Bitbucket</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">yourname</span><span class="o">/</span><span class="n">porise</span><span class="o">.</span><span class="n">git</span> <span class="p">(</span><span class="n">push</span><span class="p">)</span>
+<span class="n">upstream</span>        <span class="n">git</span><span class="p">:</span><span class="o">//</span><span class="n">Bitbucket</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">porise</span><span class="o">-</span><span class="n">dev</span><span class="o">/</span><span class="n">porise</span><span class="o">.</span><span class="n">git</span> <span class="p">(</span><span class="n">fetch</span><span class="p">)</span>
+<span class="n">upstream</span>        <span class="n">git</span><span class="p">:</span><span class="o">//</span><span class="n">Bitbucket</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">porise</span><span class="o">-</span><span class="n">dev</span><span class="o">/</span><span class="n">porise</span><span class="o">.</span><span class="n">git</span> <span class="p">(</span><span class="n">push</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Now your code is on Bitbucket, but it is not yet a part of the porise project. For that to
+happen, a pull request needs to be submitted on Bitbucket.</p>
+</div>
+<div class="section" id="review-your-code">
+<h3><a class="toc-backref" href="#id6">Review your code</a><a class="headerlink" href="#review-your-code" title="Permalink to this headline">¶</a></h3>
+<p>When you’re ready to ask for a code review, file a pull request. Before you do, once
+again make sure that you have followed all the guidelines outlined in this document
+regarding code style, tests, performance tests, and documentation. You should also
+double check your branch changes against the branch it was based on:</p>
+<ol class="arabic simple">
+<li><p>Navigate to your repository on Bitbucket – <a class="reference external" href="https://Bitbucket.com/your-user-name/porise">https://Bitbucket.com/your-user-name/porise</a></p></li>
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">Branches</span></code></p></li>
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">Compare</span></code> button for your feature branch</p></li>
+<li><p>Select the <code class="docutils literal notranslate"><span class="pre">base</span></code> and <code class="docutils literal notranslate"><span class="pre">compare</span></code> branches, if necessary. This will be <code class="docutils literal notranslate"><span class="pre">master</span></code> and
+<code class="docutils literal notranslate"><span class="pre">shiny-new-feature</span></code>, respectively.</p></li>
+</ol>
+</div>
+<div class="section" id="finally-make-the-pull-request">
+<h3><a class="toc-backref" href="#id7">Finally, make the pull request</a><a class="headerlink" href="#finally-make-the-pull-request" title="Permalink to this headline">¶</a></h3>
+<p>If everything looks good, you are ready to make a pull request.  A pull request is how
+code from a local repository becomes available to the Bitbucket community and can be looked
+at and eventually merged into the master version.  This pull request and its associated
+changes will eventually be committed to the master branch and available in the next
+release.  To submit a pull request:</p>
+<ol class="arabic simple">
+<li><p>Navigate to your repository on Bitbucke</p></li>
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">Pull</span> <span class="pre">Request</span></code> button</p></li>
+<li><p>You can then click on <code class="docutils literal notranslate"><span class="pre">Commits</span></code> and <code class="docutils literal notranslate"><span class="pre">Files</span> <span class="pre">Changed</span></code> to make sure everything looks
+okay one last time</p></li>
+<li><p>Write a description of your changes in the <code class="docutils literal notranslate"><span class="pre">Preview</span> <span class="pre">Discussion</span></code> tab</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Send</span> <span class="pre">Pull</span> <span class="pre">Request</span></code>.</p></li>
+</ol>
+<p>This request then goes to the repository maintainers, and they will review
+the code.</p>
+</div>
+<div class="section" id="updating-your-pull-request">
+<span id="contributing-update-pr"></span><h3><a class="toc-backref" href="#id8">Updating your pull request</a><a class="headerlink" href="#updating-your-pull-request" title="Permalink to this headline">¶</a></h3>
+<p>Based on the review you get on your pull request, you will probably need to make
+some changes to the code. In that case, you can make them in your branch,
+add a new commit to that branch, push it to Bitbucket, and the pull request will be
+automatically updated.  Pushing them to Bitbucket again is done by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">shiny</span><span class="o">-</span><span class="n">new</span><span class="o">-</span><span class="n">feature</span>
+</pre></div>
+</div>
+<p>This will automatically update your pull request with the latest code and restart the
+<span class="xref std std-ref">Continuous Integration</span> tests.</p>
+<p>Another reason you might need to update your pull request is to solve conflicts
+with changes that have been merged into the master branch since you opened your
+pull request.</p>
+<p>To do this, you need to “merge upstream master” in your branch:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">shiny</span><span class="o">-</span><span class="n">new</span><span class="o">-</span><span class="n">feature</span>
+<span class="n">git</span> <span class="n">fetch</span> <span class="n">upstream</span>
+<span class="n">git</span> <span class="n">merge</span> <span class="n">upstream</span><span class="o">/</span><span class="n">master</span>
+</pre></div>
+</div>
+<p>If you have uncommitted changes at the moment you want to update the branch with
+master, you will need to <code class="docutils literal notranslate"><span class="pre">stash</span></code> them prior to updating (see the
+<a class="reference external" href="https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning">stash docs</a>).
+This will effectively store your changes and they can be reapplied after updating.</p>
+<p>After the feature branch has been update locally, you can now update your pull
+request by pushing to the branch on Bitbucket:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">shiny</span><span class="o">-</span><span class="n">new</span><span class="o">-</span><span class="n">feature</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="tips-for-a-successful-pull-request">
+<h2><a class="toc-backref" href="#id9">Tips for a successful pull request</a><a class="headerlink" href="#tips-for-a-successful-pull-request" title="Permalink to this headline">¶</a></h2>
+<p>If you have made it to the <a class="reference internal" href="#review-your-code">Review your code</a> phase, one of the core contributors may
+take a look. Please note however that a handful of people are responsible for reviewing
+all of the contributions, which can often lead to bottlenecks.</p>
+<p>To improve the chances of your pull request being reviewed, you should:</p>
+<ul class="simple">
+<li><p><strong>Reference an open issue</strong> for non-trivial changes to clarify the PR’s purpose</p></li>
+<li><p><strong>Ensure you have appropriate tests</strong>. These should be the first part of any PR</p></li>
+<li><p><strong>Keep your pull requests as simple as possible</strong>. Larger PRs take longer to review</p></li>
+<li><p><strong>Ensure that CI is in a green state</strong>. Reviewers may not even look otherwise</p></li>
+<li><p><strong>Keep</strong> <a class="reference internal" href="#updating-your-pull-request">Updating your pull request</a>, either by request or every few days</p></li>
+</ul>
+</div>
+</div>
+
+
+              </div>
+              
+              
+              <div class='prev-next-bottom'>
+                
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">Development</a>
+    <a class='right-next' id="next-link" href="contributing_docstring.html" title="next page">porise docstring guide</a>
+
+              </div>
+              
+          </main>
+          
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright 2021, Xiaolan Jiang, Just as an example website to show..<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

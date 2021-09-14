@@ -1,0 +1,6 @@
+porise.envs.real.ChainOfferEnvV2.get\_user\_state
+=================================================
+
+.. currentmodule:: porise.envs.real
+
+.. automethod:: ChainOfferEnvV2.get_user_state

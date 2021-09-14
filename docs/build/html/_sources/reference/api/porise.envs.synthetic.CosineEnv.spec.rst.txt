@@ -1,0 +1,6 @@
+porise.envs.synthetic.CosineEnv.spec
+====================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. autoattribute:: CosineEnv.spec

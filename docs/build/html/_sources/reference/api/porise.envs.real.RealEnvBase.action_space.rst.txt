@@ -1,0 +1,6 @@
+porise.envs.real.RealEnvBase.action\_space
+==========================================
+
+.. currentmodule:: porise.envs.real
+
+.. autoattribute:: RealEnvBase.action_space

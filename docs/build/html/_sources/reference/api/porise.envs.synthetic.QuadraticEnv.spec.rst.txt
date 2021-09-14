@@ -1,0 +1,6 @@
+porise.envs.synthetic.QuadraticEnv.spec
+=======================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. autoattribute:: QuadraticEnv.spec

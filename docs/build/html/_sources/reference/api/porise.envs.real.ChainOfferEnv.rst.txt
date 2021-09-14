@@ -1,0 +1,40 @@
+porise.envs.real.ChainOfferEnv
+==============================
+
+.. currentmodule:: porise.envs.real
+
+.. autoclass:: ChainOfferEnv
+
+   
+
+
+..
+   HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+   .. autosummary::
+      :toctree:
+      
+      ChainOfferEnv.close
+      ChainOfferEnv.get_user_state
+      ChainOfferEnv.reset
+      ChainOfferEnv.seed
+      ChainOfferEnv.step
+
+
+
+
+   
+
+
+..
+   HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+   .. autosummary::
+      :toctree:
+      
+      ChainOfferEnv.action_space
+      ChainOfferEnv.arm_feat_dim
+      ChainOfferEnv.n_arms
+      ChainOfferEnv.reward_range
+      ChainOfferEnv.spec
+      ChainOfferEnv.user_feat_dim
+
+

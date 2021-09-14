@@ -1,0 +1,6 @@
+porise.envs.synthetic.CosineEnv.reset
+=====================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: CosineEnv.reset

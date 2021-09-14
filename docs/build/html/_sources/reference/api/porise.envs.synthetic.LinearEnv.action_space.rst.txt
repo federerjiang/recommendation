@@ -1,0 +1,6 @@
+porise.envs.synthetic.LinearEnv.action\_space
+=============================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. autoattribute:: LinearEnv.action_space

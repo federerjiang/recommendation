@@ -1,0 +1,40 @@
+porise.envs.synthetic.LinearEnv
+===============================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. autoclass:: LinearEnv
+
+   
+
+
+..
+   HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+   .. autosummary::
+      :toctree:
+      
+      LinearEnv.close
+      LinearEnv.get_reward_func
+      LinearEnv.get_user_state
+      LinearEnv.reset
+      LinearEnv.reset_features
+      LinearEnv.reset_rewards
+      LinearEnv.seed
+      LinearEnv.step
+
+
+
+
+   
+
+
+..
+   HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+   .. autosummary::
+      :toctree:
+      
+      LinearEnv.action_space
+      LinearEnv.reward_range
+      LinearEnv.spec
+
+

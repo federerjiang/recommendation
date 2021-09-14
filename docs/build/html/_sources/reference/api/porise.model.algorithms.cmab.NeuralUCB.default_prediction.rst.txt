@@ -1,0 +1,6 @@
+porise.model.algorithms.cmab.NeuralUCB.default\_prediction
+==========================================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. automethod:: NeuralUCB.default_prediction

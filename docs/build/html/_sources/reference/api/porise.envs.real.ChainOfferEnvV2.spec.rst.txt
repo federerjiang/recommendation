@@ -1,0 +1,6 @@
+porise.envs.real.ChainOfferEnvV2.spec
+=====================================
+
+.. currentmodule:: porise.envs.real
+
+.. autoattribute:: ChainOfferEnvV2.spec

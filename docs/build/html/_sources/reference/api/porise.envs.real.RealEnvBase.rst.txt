@@ -1,0 +1,40 @@
+porise.envs.real.RealEnvBase
+============================
+
+.. currentmodule:: porise.envs.real
+
+.. autoclass:: RealEnvBase
+
+   
+
+
+..
+   HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+   .. autosummary::
+      :toctree:
+      
+      RealEnvBase.close
+      RealEnvBase.get_user_state
+      RealEnvBase.reset
+      RealEnvBase.seed
+      RealEnvBase.step
+
+
+
+
+   
+
+
+..
+   HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+   .. autosummary::
+      :toctree:
+      
+      RealEnvBase.action_space
+      RealEnvBase.arm_feat_dim
+      RealEnvBase.n_arms
+      RealEnvBase.reward_range
+      RealEnvBase.spec
+      RealEnvBase.user_feat_dim
+
+

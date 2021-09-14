@@ -1,0 +1,6 @@
+porise.model.algorithms.cmab.LinUCB.reset
+=========================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. automethod:: LinUCB.reset

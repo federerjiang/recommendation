@@ -1,0 +1,6 @@
+porise.envs.synthetic.LinearEnv.reset\_features
+===============================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: LinearEnv.reset_features

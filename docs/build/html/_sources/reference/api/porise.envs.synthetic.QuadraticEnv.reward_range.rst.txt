@@ -1,0 +1,6 @@
+porise.envs.synthetic.QuadraticEnv.reward\_range
+================================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. autoattribute:: QuadraticEnv.reward_range

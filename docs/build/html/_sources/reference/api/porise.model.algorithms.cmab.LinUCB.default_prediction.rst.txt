@@ -1,0 +1,6 @@
+porise.model.algorithms.cmab.LinUCB.default\_prediction
+=======================================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. automethod:: LinUCB.default_prediction

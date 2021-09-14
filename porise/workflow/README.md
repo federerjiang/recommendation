@@ -1,0 +1,1 @@
+The workflow module is for making it possible to evaluate algorithms by just configure a yaml file. 

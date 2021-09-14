@@ -1,0 +1,6 @@
+porise.envs.synthetic.CosineEnv.get\_user\_state
+================================================
+
+.. currentmodule:: porise.envs.synthetic
+
+.. automethod:: CosineEnv.get_user_state

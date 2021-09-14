@@ -1,0 +1,6 @@
+porise.envs.real.ChainOfferEnv.reward\_range
+============================================
+
+.. currentmodule:: porise.envs.real
+
+.. autoattribute:: ChainOfferEnv.reward_range

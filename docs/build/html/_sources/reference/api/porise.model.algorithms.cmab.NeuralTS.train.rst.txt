@@ -1,0 +1,6 @@
+porise.model.algorithms.cmab.NeuralTS.train
+===========================================
+
+.. currentmodule:: porise.model.algorithms.cmab
+
+.. automethod:: NeuralTS.train
